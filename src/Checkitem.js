@@ -5,7 +5,7 @@ function Checkitem({id, name, Checkhandler, Checkset}) {
 
   useEffect(() => {
     setIsChecked(Checkset.includes(id));
-  }, [Checkset]);
+  }, [Checkset, id]);
 
   const isCheckhandler = (e) => {
     setIsChecked(!ischecked);
