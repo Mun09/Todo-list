@@ -23,6 +23,7 @@ function App() {
       <h1>TODO-LIST</h1>
       <Todoform TodoGet={TodoGet} id={id} setId={setId}/>
       <Todofilter setFiltering_key={setFiltering_key}/>
+      <div className='line'></div>
       <Todolist todos={todos} setTodos={setTodos} TodoDelete={TodoDelete} filtering_key={filtering_key}/>
     </>
   );

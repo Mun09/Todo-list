@@ -1,4 +1,11 @@
+* {
+  
+}
+
 .one_component {
   border: 1px solid black;
   color: black;
+  border-radius: 15px;
+  background-color: white;
 }
+

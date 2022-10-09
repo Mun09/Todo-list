@@ -15,6 +15,7 @@ function OneTodo({todo, index, TodoDelete}) {
         <p>deadline: {todo.deadline}</p>
       </div>
       <button onClick={Deleteclickhandler}>Delete</button>
+      <div className='line'></div>
     </div>
 
   )
