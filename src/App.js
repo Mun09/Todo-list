@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Todoform from './Todoform.js';
+import Todolist from './Todolist.js';
 import './App.css';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+  const [id, setId] = useState(0);
+
+  const TodoGet = (newdata) => {
+    setTodos(todos.concat([newdata]));
+  }
+
+  const TodoDelete = (index) => {
+    const l = todos.length;
+    setTodos(todos.slice(0, index).concat(todos.slice(index+1, l)));
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>TODO-LIST</h1>
+      <Todoform TodoGet={TodoGet} id={id} setId={setId}/>
+      <Todolist todos={todos} setTodos={setTodos} TodoDelete={TodoDelete}/>
+    </>
   );
 }
 
