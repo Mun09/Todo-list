@@ -1,7 +1,9 @@
-#sparcs-react-seminar: Todo-list
-놀라운 디자인의 TODO리스트 관리 사이트입니다.
+# sparcs-react-seminar: Todo-list
+
+놀라운 디자인의 TODO리스트 관리 사이트입니다.\
 https://bucolic-treacle-ec9d16.netlify.app
-#Project Summary
+
+# Project Summary
 * 하루의 할 일들을 관리할 수 있는 사이트입니다.
 * 할 일들의 제목, 내용, 기한, 중요도를 관리할 수 있습니다.
 * 아이템의 추가와 각각의 삭제가 가능합니다.
